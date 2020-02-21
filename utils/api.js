@@ -22,27 +22,20 @@ const defaultHeaders = {
       method: 'GET',
       headers,
     }).then((res) => {
-      // Whatever you want here
       return res.json();
     });
   }
 
-  export function post(url, body, config = {}) {
-    let headers = generateHeaders(config.headers)
+  export function post(url,body, config = {}) {
+    const headers = generateHeaders(config.headers)
     const apiUrl = generateUrl(url)
-    headers = {
-        ...headers,
-        'Content-Type': 'application/json;charset=utf-8'
-    }
     
     return fetch(apiUrl, {
-      method: 'POST',
+      method: 'GET',
       body: JSON.stringify(body),
       headers,
     }).then((res) => {
-      // Whatever you want here
       return res.json();
     });
-
-    axios.post('/list', body)
   }
+

@@ -1,15 +1,30 @@
 import React from 'react'
-import { SafeAreaView } from 'react-native'
-import { H1 } from 'native-base'
+import { H1, Button, Text } from 'native-base'
+import { SafeAreaView, View } from 'react-native'
 
-class About extends React.Component {
-    render() {
+class About extends React.Component{
+    navigate(screenName){
+        this.props.navigation.push(screenName)
+    }
+    render(){
         return(
+            
             <SafeAreaView>
-                <H1>About Page</H1>
+                <View style= {{ alignments: 'flex-start'}}>            
+                    <Button 
+                    onPress= {() => this.navigate('Profile')} block> 
+                        <Text>Profile </Text>
+                    </Button>
+                    <Button 
+                    onPress= {() => this.navigate('Home')} block> 
+                        <Text>Home </Text>
+                    </Button>
+
+                </View>
+                    
             </SafeAreaView>
+           
         )
     }
 }
-
 export default About

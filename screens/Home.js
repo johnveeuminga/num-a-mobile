@@ -1,29 +1,39 @@
 import React from 'react'
-import { SafeAreaView, View } from 'react-native'
-import { H1, Button, Text, Container, Content, Body } from 'native-base'
+import { H1, Button, Container, Text } from 'native-base'
+import { SafeAreaView, View} from 'react-native'
+import { TextInput } from 'react-native-gesture-handler'
 
-class Home extends React.Component {
-    navigate() {
-        this.props.navigation(screenName)
+
+class Home extends React.Component{
+    navigate(screenName){
+        this.props.navigation.push(screenName)
     }
-
-    render() {
+    
+    render(){
+       
         return(
             <SafeAreaView>
-                <View style={{ alignItems: 'flex-start'}}>
-                    <H1>Home Page</H1>
-                    <Button
-                        onPress={() => this.navigate('Home')}
-                        block
-                    >
-                        <Text>ABOUT</Text>
+                <View style= {{ alignments: 'flex-start'}}>
+            
+                    <Button 
+                    onPress= {() => this.navigate('About')} block> 
+                        <Text>About</Text>
                     </Button>
+                    <Button 
+                    onPress= {() => this.navigate('Profile')} block> 
+                        <Text>Profile </Text>
+                    </Button>
+                    <Button 
+                    onPress= {() => this.navigate('Movies')} block> 
+                        <Text>Movies </Text>
+                    </Button>
+                  
+
                 </View>
+                    
             </SafeAreaView>
-            // <SafeAreaView>
-            // </SafeAreaView>
+       
         )
     }
 }
-
 export default Home

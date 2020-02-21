@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "NumAMobile.app"
-               BlueprintName = "NumAMobile"
-               ReferencedContainer = "container:NumAMobile.xcodeproj">
+               BuildableName = "numamobile.app"
+               BlueprintName = "numamobile"
+               ReferencedContainer = "container:numamobile.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "NumAMobileTests.xctest"
-               BlueprintName = "NumAMobileTests"
-               ReferencedContainer = "container:NumAMobile.xcodeproj">
+               BuildableName = "numamobileTests.xctest"
+               BlueprintName = "numamobileTests"
+               ReferencedContainer = "container:numamobile.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "NumAMobileTests.xctest"
-               BlueprintName = "NumAMobileTests"
-               ReferencedContainer = "container:NumAMobile.xcodeproj">
+               BuildableName = "numamobileTests.xctest"
+               BlueprintName = "numamobileTests"
+               ReferencedContainer = "container:numamobile.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "NumAMobile.app"
-            BlueprintName = "NumAMobile"
-            ReferencedContainer = "container:NumAMobile.xcodeproj">
+            BuildableName = "numamobile.app"
+            BlueprintName = "numamobile"
+            ReferencedContainer = "container:numamobile.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "NumAMobile.app"
-            BlueprintName = "NumAMobile"
-            ReferencedContainer = "container:NumAMobile.xcodeproj">
+            BuildableName = "numamobile.app"
+            BlueprintName = "numamobile"
+            ReferencedContainer = "container:numamobile.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "NumAMobile.app"
-            BlueprintName = "NumAMobile"
-            ReferencedContainer = "container:NumAMobile.xcodeproj">
+            BuildableName = "numamobile.app"
+            BlueprintName = "numamobile"
+            ReferencedContainer = "container:numamobile.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
