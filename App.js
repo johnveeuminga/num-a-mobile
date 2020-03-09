@@ -19,8 +19,7 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import Home from './screens/Home';
-import About from './screens/About';
+import List from './screens/List';
 import Profile from './screens/Profile';
 import LoginHome from './screens/LoginHome';
 
@@ -32,8 +31,8 @@ class App extends React.Component{
     return(
      <NavigationContainer>
      <Stack.Navigator initialRouteName = 'LoginHome' screenOptions={{headerShown: false  }}>
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="About" component={About} />
+ 
+        <Stack.Screen name="List" component={List} />
         <Stack.Screen name="Profile" component={Profile} />
         <Stack.Screen name="LoginHome" component={LoginHome} />
       </Stack.Navigator>
