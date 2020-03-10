@@ -47,7 +47,7 @@ export default class FarmerHome extends React.Component{
                 <View style={{padding:10}}> 
                    <Button style={{backgroundColor:'#DAEF83',  height:120, width:140, borderRadius:10, flexDirection:'column'}}>
                    <Image source= {require('./images/farm.png')} style={{backgroundColor:'transparent',height:80, width:80}}
-                   onPress={() => navigate('Farm')}>
+                   onPress={() => navigate('Farmer')}>
                         </Image>
                     <Text style={{color:'black', fontSize:15, fontWeight:'bold'}}>Farm</Text>
                 </Button> 

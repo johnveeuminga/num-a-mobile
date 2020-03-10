@@ -38,14 +38,11 @@ class App extends React.Component{
     return(
      <NavigationContainer>
      <Stack.Navigator initialRouteName = 'Home' screenOptions={{headerShown: false  }}>
-        <Stack.Screen name="List" component={List} />
         <Stack.Screen name="Profile" component={Profile} />
         <Stack.Screen name="LoginHome" component={LoginHome} />
         <Stack.Screen name="Farmer" component={Farmer} />
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="List" component={List} />
-        <Stack.Screen name="Profile" component={Profile} />
-        <Stack.Screen name="LoginHome" component={LoginHome} />
         <Stack.Screen name="FarmerHome" component={FarmerHome} />
         <Stack.Screen name="Market" component={Market} />
         <Stack.Screen name="Analysis" component={Analysis} />
