@@ -24,6 +24,11 @@ import Profile from './screens/Profile';
 import LoginHome from './screens/LoginHome';
 import Farmer from './screens/Farmer';
 
+import Home from './screens/Home'
+import FarmerHome from './screens/FarmerHome'
+import Market from './screens/Market'
+import Analysis from './screens/Analysis'
+import Activities from './screens/Activities'
 
 const Stack = createStackNavigator();
 
@@ -32,12 +37,19 @@ class App extends React.Component{
   {
     return(
      <NavigationContainer>
-     <Stack.Navigator initialRouteName = 'Farmer' screenOptions={{headerShown: false  }}>
- 
+     <Stack.Navigator initialRouteName = 'Home' screenOptions={{headerShown: false  }}>
         <Stack.Screen name="List" component={List} />
         <Stack.Screen name="Profile" component={Profile} />
         <Stack.Screen name="LoginHome" component={LoginHome} />
         <Stack.Screen name="Farmer" component={Farmer} />
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="List" component={List} />
+        <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="LoginHome" component={LoginHome} />
+        <Stack.Screen name="FarmerHome" component={FarmerHome} />
+        <Stack.Screen name="Market" component={Market} />
+        <Stack.Screen name="Analysis" component={Analysis} />
+        <Stack.Screen name="Activities" component={Activities} />
 
       </Stack.Navigator>
      </NavigationContainer>

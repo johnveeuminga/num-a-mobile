@@ -5,7 +5,8 @@ import { SocialIcon } from 'react-native-elements'
 
 class LoginHome extends React.Component{
     render(){
-        const {navigate} = this.props.navigation;
+        const {navigate} =this.props.navigation;
+
         return(
             <Container>
                 <View>
@@ -18,26 +19,18 @@ class LoginHome extends React.Component{
                          <Text style={style.text}>LOG IN AS:</Text>
                     </View>
 
-                    <View style= {{marginHorizontal:25}}>
-                        <SocialIcon
-                        title='Sign In With Facebook'
-                        button
-                         type='facebook'
-                        />
-                    </View>
-                   <View style={{ marginHorizontal: 25 }}>
-                        <SocialIcon
-                        title='Sign In With Gmail'
-                        button
-                         type='google-plus-official'
-                        />
-                    </View>
-                    <Button rounded style= {{ marginHorizontal: 33, marginVertical:7, backgroundColor: '#ff4949', justifyContent:'center'}}
-                            onPress={() => navigate('FarmerHome')}
+                    <Button rounded style= {{ marginHorizontal: 33, marginVertical:7, backgroundColor: '#DAEF83', justifyContent:'center'}}>      
+                            <Text style={{ textAlign: 'center', color:'black', fontWeight:'bold', fontSize:18 }}>
+                            Farmer
+                            </Text> 
+                    </Button>
+                    <Button rounded style= {{ marginHorizontal: 33, marginVertical:7, backgroundColor: '#DAEF83', justifyContent:'center'}}
+                            onPress={() => navigate('LoginHome')}
                     >      
-                            <Icon ios='ios-person' android="md-person" style={{fontSize: 30, color: 'white' }}/>
-                            <Text style={{ textAlign: 'center', color:'white' }}>
-                            Login As Email
+                            <Text style={{ textAlign: 'center', color:'black', fontWeight:'bold', fontSize:18 }}
+                            onPress={() => navigate('LoginHome')}
+                    >
+                            Buyer
                             </Text> 
                     </Button>
 
