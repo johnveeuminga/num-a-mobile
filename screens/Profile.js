@@ -1,20 +1,32 @@
 import React from 'react'
-import { SafeAreaView } from 'react-native'
-import { H1, Container, Content, Header } from 'native-base'
-
-class Profile extends React.Component {
-    render() {
+import { H1, Button, Text } from 'native-base'
+import { SafeAreaView,View } from 'react-native'
+class Profile extends React.Component{
+    navigate(screenName){
+        this.props.navigation.push(screenName)
+    }
+    render(){
         return(
-            <Container>
-                {/* <Header /> */}
-                <Content>
-                    <H1>Profile Page</H1>
-                </Content>
-            </Container>
-            // <SafeAreaView>
-            // </SafeAreaView>
+            
+            <SafeAreaView>
+                <View style= {{ alignments: 'flex-start'}}>
+                
+                    
+                    <Button 
+                    onPress= {() => this.navigate('Home')} block> 
+                        <Text>Home </Text>
+                    </Button>
+
+                    <Button 
+                    onPress= {() => this.navigate('About')} block> 
+                        <Text>About </Text>
+                    </Button>
+
+                </View>
+                    
+            </SafeAreaView>
+           
         )
     }
 }
-
 export default Profile
