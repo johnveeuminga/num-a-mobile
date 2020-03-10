@@ -22,6 +22,8 @@ import {
 import List from './screens/List';
 import Profile from './screens/Profile';
 import LoginHome from './screens/LoginHome';
+import Farmer from './screens/Farmer';
+
 
 const Stack = createStackNavigator();
 
@@ -30,11 +32,13 @@ class App extends React.Component{
   {
     return(
      <NavigationContainer>
-     <Stack.Navigator initialRouteName = 'LoginHome' screenOptions={{headerShown: false  }}>
+     <Stack.Navigator initialRouteName = 'Farmer' screenOptions={{headerShown: false  }}>
  
         <Stack.Screen name="List" component={List} />
         <Stack.Screen name="Profile" component={Profile} />
         <Stack.Screen name="LoginHome" component={LoginHome} />
+        <Stack.Screen name="Farmer" component={Farmer} />
+
       </Stack.Navigator>
      </NavigationContainer>
     )
